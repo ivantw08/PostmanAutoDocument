@@ -1,0 +1,677 @@
+{
+	"id": "bce6a657-d755-45e2-ba74-9f9baf7ccf5c",
+	"name": "postMan",
+	"description": "This is api example",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"a701d08f-4baa-4406-a055-1ae7b3832776",
+		"8faa9ef9-eac8-4b36-910a-6ca793f88e86",
+		"b70c6a93-57d9-434b-9c32-12bf7bcdca19"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "8faa9ef9-eac8-4b36-910a-6ca793f88e86",
+			"name": "user/{user_id}",
+			"url": "http://localhost/jwt/public/api/user/ivantw08",
+			"description": "this api show the user information",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "sdfgmv,cod9e84j59590404kk59yh780303489rjfhr4y57tgurbhy3483o9fkfhtyt88554",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "327b5a08-8ffb-444c-afca-edeb5973e0fb",
+					"name": "user not found",
+					"status": "",
+					"mime": "",
+					"language": "json",
+					"text": "{\"status\":\"user not found\"}",
+					"responseCode": {
+						"code": 400,
+						"name": "Bad Request",
+						"detail": "The request cannot be fulfilled due to bad syntax."
+					},
+					"requestObject": {
+						"url": "http://localhost/jwt/public/api/user/ivantw09",
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "sdfgmv,cod9e84j59590404kk59yh780303489rjfhr4y57tgurbhy3483o9fkfhtyt88554",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "27",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Jun 2018 03:19:50 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization",
+							"name": "Vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.31",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": false,
+							"name": "token",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOm51bGwsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvand0XC9wdWJsaWNcL2FwaVwvYXV0aFwvbW9wTG9naW4iLCJpYXQiOjE1MjEwOTkwODksImV4cCI6MTUyMTEwMDI4OSwibmJmIjoxNTIxMDk5MDg5LCJqdGkiOiI3OWUwZjI1NGY0MzQzYjY1ZjVjMTY2YzcyY2FiY2MyZiJ9.qHVk3RGOyaveZ1YXyL2Xp9ZStt69kuzVzye50IHFJ4g"
+						}
+					],
+					"request": "8faa9ef9-eac8-4b36-910a-6ca793f88e86",
+					"collection": "bce6a657-d755-45e2-ba74-9f9baf7ccf5c"
+				},
+				{
+					"id": "962a8edc-aeb9-43f8-a4b2-88d65437e844",
+					"name": "get user info success",
+					"status": "",
+					"mime": "",
+					"language": "json",
+					"text": "{\"name\":\"Ivan Wu\",\"mail\":\"ivantw08@gmail.com\",\"gender\":\"male\"}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"requestObject": {
+						"url": "http://localhost/jwt/public/api/user/ivantw08",
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "sdfgmv,cod9e84j59590404kk59yh780303489rjfhr4y57tgurbhy3483o9fkfhtyt88554",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							}
+						],
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "62",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Jun 2018 03:18:43 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "\"bb28c02a0a57a225466aadac048951c987984517\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization",
+							"name": "Vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.31",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": false,
+							"name": "token",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOm51bGwsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvand0XC9wdWJsaWNcL2FwaVwvYXV0aFwvbW9wTG9naW4iLCJpYXQiOjE1MjEwOTkwODksImV4cCI6MTUyMTEwMDI4OSwibmJmIjoxNTIxMDk5MDg5LCJqdGkiOiI3OWUwZjI1NGY0MzQzYjY1ZjVjMTY2YzcyY2FiY2MyZiJ9.qHVk3RGOyaveZ1YXyL2Xp9ZStt69kuzVzye50IHFJ4g"
+						}
+					],
+					"request": "8faa9ef9-eac8-4b36-910a-6ca793f88e86",
+					"collection": "bce6a657-d755-45e2-ba74-9f9baf7ccf5c"
+				}
+			],
+			"headers": "Authorization: sdfgmv,cod9e84j59590404kk59yh780303489rjfhr4y57tgurbhy3483o9fkfhtyt88554\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "a701d08f-4baa-4406-a055-1ae7b3832776",
+			"name": "login",
+			"url": "http://localhost/jwt/public/api/login",
+			"description": "This api is for user login",
+			"data": [
+				{
+					"key": "account",
+					"value": "ivantw08@gmail.com",
+					"description": "user account",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "password",
+					"description": "user password",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "0f8ac86b-047a-47ad-9da6-3d0c4975a18b",
+					"name": "login success",
+					"status": "",
+					"mime": "",
+					"language": "json",
+					"text": "{\"status\":\"login successful\",\"user name\":\"Ivan wu\",\"token\":\"cmvkjf9rj5ntgkf93e854jtkf\"}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"requestObject": {
+						"url": "http://localhost/jwt/public/api/login",
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"data": [
+							{
+								"key": "account",
+								"value": "ivantw08@gmail.com",
+								"description": "user account",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"description": "user password",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
+						"dataMode": "params"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "87",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Jun 2018 03:09:43 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "\"c811e0ea2b0ab2a72827ab6cb945cdac6d5ab314\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.31",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": false,
+							"name": "token",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOm51bGwsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvand0XC9wdWJsaWNcL2FwaVwvYXV0aFwvbW9wTG9naW4iLCJpYXQiOjE1MjEwOTkwODksImV4cCI6MTUyMTEwMDI4OSwibmJmIjoxNTIxMDk5MDg5LCJqdGkiOiI3OWUwZjI1NGY0MzQzYjY1ZjVjMTY2YzcyY2FiY2MyZiJ9.qHVk3RGOyaveZ1YXyL2Xp9ZStt69kuzVzye50IHFJ4g"
+						}
+					],
+					"request": "a701d08f-4baa-4406-a055-1ae7b3832776",
+					"collection": "bce6a657-d755-45e2-ba74-9f9baf7ccf5c"
+				},
+				{
+					"id": "78df79e4-4fdd-42c6-8560-d04fe6740be7",
+					"name": "login fail",
+					"status": "",
+					"mime": "",
+					"language": "json",
+					"text": "{\"status\":\"password or account is incorrect\"}",
+					"responseCode": {
+						"code": 400,
+						"name": "Bad Request"
+					},
+					"requestObject": {
+						"url": "http://localhost/jwt/public/api/login",
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"data": [
+							{
+								"key": "account",
+								"value": "ivantw08@gmail.com",
+								"description": "user account",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "password",
+								"value": "password",
+								"description": "user password",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "POST",
+						"dataMode": "params"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "no-cache",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "45",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Jun 2018 02:53:01 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.31",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": false,
+							"name": "token",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOm51bGwsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvand0XC9wdWJsaWNcL2FwaVwvYXV0aFwvbW9wTG9naW4iLCJpYXQiOjE1MjEwOTkwODksImV4cCI6MTUyMTEwMDI4OSwibmJmIjoxNTIxMDk5MDg5LCJqdGkiOiI3OWUwZjI1NGY0MzQzYjY1ZjVjMTY2YzcyY2FiY2MyZiJ9.qHVk3RGOyaveZ1YXyL2Xp9ZStt69kuzVzye50IHFJ4g"
+						}
+					],
+					"request": "a701d08f-4baa-4406-a055-1ae7b3832776",
+					"collection": "bce6a657-d755-45e2-ba74-9f9baf7ccf5c"
+				}
+			],
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "b70c6a93-57d9-434b-9c32-12bf7bcdca19",
+			"name": "product/{proiduct_id}",
+			"url": "http://localhost/jwt/public/api/product/cccs78s",
+			"description": "",
+			"data": [
+				{
+					"key": "product name",
+					"value": "Magic book",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "code",
+					"value": "cccs78s",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "weight",
+					"value": "150",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "price",
+					"value": "150",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "color",
+					"value": "black",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "lmnxcklmnoiw8303uij3oirm23wie0kdkp",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": ""
+				}
+			],
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": [],
+			"folder": null,
+			"responses": [
+				{
+					"id": "56516c12-66a1-4f07-a1cf-d6e531fb6ced",
+					"name": "change some product info",
+					"status": "",
+					"mime": "",
+					"language": "json",
+					"text": "{\"product name\":\"Magic book\",\"code\":\"Ivan wu\",\"weight\":\"150g\",\"price\":\"150\",\"color\":\"black\"}",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"requestObject": {
+						"url": "http://localhost/jwt/public/api/product/cccs78s",
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "lmnxcklmnoiw8303uij3oirm23wie0kdkp",
+								"description": "",
+								"enabled": true,
+								"disabled": false
+							},
+							{
+								"key": "Content-Type",
+								"description": "",
+								"type": "text",
+								"name": "Content-Type",
+								"value": "application/x-www-form-urlencoded",
+								"disabled": false
+							}
+						],
+						"data": [
+							{
+								"key": "product name",
+								"value": "Magic book",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "code",
+								"value": "cccs78s",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "weight",
+								"value": "150",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "price",
+								"value": "150",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							},
+							{
+								"key": "color",
+								"value": "black",
+								"description": "",
+								"type": "text",
+								"enabled": true
+							}
+						],
+						"method": "PUT",
+						"dataMode": "urlencoded"
+					},
+					"headers": [
+						{
+							"key": "Cache-Control",
+							"value": "private, must-revalidate",
+							"name": "Cache-Control",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"key": "Connection",
+							"value": "close",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "92",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 07 Jun 2018 03:37:37 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "\"a23871c9eb795114772737f050e8693eb7ceed83\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apache/2.4.26 (Win32) OpenSSL/1.0.2l PHP/5.6.31",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "Vary",
+							"value": "Authorization",
+							"name": "Vary",
+							"description": "Tells downstream proxies how to match future request headers to decide whether the cached response can be used rather than requesting a fresh one from the origin server."
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/5.6.31",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [
+						{
+							"domain": "localhost",
+							"expirationDate": 2147483647,
+							"httpOnly": false,
+							"name": "token",
+							"path": "/",
+							"secure": false,
+							"url": "http://localhost",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOm51bGwsImlzcyI6Imh0dHA6XC9cL2xvY2FsaG9zdFwvand0XC9wdWJsaWNcL2FwaVwvYXV0aFwvbW9wTG9naW4iLCJpYXQiOjE1MjEwOTkwODksImV4cCI6MTUyMTEwMDI4OSwibmJmIjoxNTIxMDk5MDg5LCJqdGkiOiI3OWUwZjI1NGY0MzQzYjY1ZjVjMTY2YzcyY2FiY2MyZiJ9.qHVk3RGOyaveZ1YXyL2Xp9ZStt69kuzVzye50IHFJ4g"
+						}
+					],
+					"request": "b70c6a93-57d9-434b-9c32-12bf7bcdca19",
+					"collection": "bce6a657-d755-45e2-ba74-9f9baf7ccf5c"
+				}
+			],
+			"headers": "Authorization: lmnxcklmnoiw8303uij3oirm23wie0kdkp\nContent-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		}
+	]
+}
