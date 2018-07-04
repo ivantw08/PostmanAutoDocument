@@ -4,7 +4,7 @@ When we finish the postman test. We can not generate a local offline document fo
 
 How to use ?
 ==== 
-1.output the json file.
+1.output the json file from postman.
 
 2.put in this folder and renamed as document.json
 
@@ -15,5 +15,7 @@ then the document.html will generate
 
 
 Demo image 
+-------  
+
 ![image](https://github.com/ivantw08/PostmanAutoDocument/blob/master/demo.PNG)
 
