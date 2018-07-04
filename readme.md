@@ -9,7 +9,8 @@ How to use ?
 2.put in this folder and renamed as document.json
 
 3.use the node command to trigger document.js
-    node document.js
+
+        node document.js
 
 then the document.html will generate 
 
